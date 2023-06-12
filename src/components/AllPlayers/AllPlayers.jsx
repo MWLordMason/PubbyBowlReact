@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import SinglePlayer from "./SinglePlayer";
+import SinglePlayer from "../SinglePlayer/SinglePlayer";
+import './AllPlayers.css'
 
 function AllPlayers() {
   const [players,setPlayers] = useState([])

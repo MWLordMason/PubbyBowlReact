@@ -3,7 +3,8 @@ import React from 'react';
 function Home() {
   return (
     <div>
-      Home Page
+      <h1>Home Page of Team Puppy!</h1>
+      <img src='src/assets/images/puppy team.png' id='team-img'/>
     </div>
   );
 }

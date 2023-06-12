@@ -1,13 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import '/home/mwlordmason/coursework/week1/variables/PuppyBowlReact/PuppyBowlReact/src/index.css'
 
 function SinglePlayer({ player }) {
     const navigate = useNavigate()
     return (
-        <div className="single-player">
+        <div className="puppy-container">
             <h4>{player.name}</h4>
-            <h4>{player.breed}</h4>
-            <img src={player.imageUrl}></img>
+            <img src={player.imageUrl} className='puppy-img'></img>
             <button 
             onClick={() => {
                 navigate(`/players/${player.id}`)

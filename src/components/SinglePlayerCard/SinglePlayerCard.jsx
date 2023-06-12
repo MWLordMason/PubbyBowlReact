@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import '/home/mwlordmason/coursework/week1/variables/PuppyBowlReact/PuppyBowlReact/src/index.css'
+
 
 function SinglePlayerCard({ puppy }) {
     const [players,setPlayers] = useState(null)
@@ -23,11 +25,12 @@ function SinglePlayerCard({ puppy }) {
         <>
             {
                 players && players.id ? (
-                    <div className="player-card">
-                    <h4>{players.id}</h4>
-                    <h4>{players.breed}</h4>
-                    <h4>{players.status}</h4>
-                    <img src={players.imageUrl}></img>
+                    <div id="puppy-details-container">
+                    <h4>Player Name: {players.name}</h4>
+                    <h4>Player Id: {players.id}</h4>
+                    <h4>Breed: {players.breed}</h4>
+                    <h4>Status: {players.status}</h4>
+                    <img src={players.imageUrl} className='puppy-img'></img>
                     <button 
                     onClick={() => {
                     navigate(`/players/`)

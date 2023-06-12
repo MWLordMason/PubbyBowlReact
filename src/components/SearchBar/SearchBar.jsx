@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import SinglePlayer from './SinglePlayer';
+import SinglePlayer from '../SinglePlayer/SinglePlayer';
 
 
 function SearchBar() {
@@ -28,7 +28,7 @@ function SearchBar() {
         fetchAllPlayers()
     })
     return (
-        <div>
+        <>
           <form>
             
             <label htmlFor="search-query">Search By Name Here: </label>
@@ -43,7 +43,7 @@ function SearchBar() {
               }}
             ></input>
           </form>
-    
+          <div id='all-players-container'>
           {
             filteredPlayers.length ? filteredPlayers.map((result, idx) => {
               return <SinglePlayer key={idx} player={result} />
@@ -51,6 +51,7 @@ function SearchBar() {
           }
           
         </div>
+      </>
       )
 }
 
