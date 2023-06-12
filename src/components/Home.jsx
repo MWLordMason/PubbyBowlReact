@@ -4,7 +4,7 @@ function Home() {
   return (
     <div>
       <h1>Home Page of Team Puppy!</h1>
-      <img src='src/assets/images/puppy team.png' id='team-img'/>
+      <img src='src/assets/images/puppy_team.png' id='team-img'/>
     </div>
   );
 }
