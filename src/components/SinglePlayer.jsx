@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import '/home/mwlordmason/coursework/week1/variables/PuppyBowlReact/PuppyBowlReact/src/index.css'
 
 function SinglePlayer({ player }) {
     const navigate = useNavigate()

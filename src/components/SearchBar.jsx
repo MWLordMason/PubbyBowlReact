@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import SinglePlayer from '../SinglePlayer/SinglePlayer';
+import SinglePlayer from './SinglePlayer';
 
 
 function SearchBar() {

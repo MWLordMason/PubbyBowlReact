@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import NavBar from './components/NavBar/NavBar'
-import Home from './components/Home/Home'
-import SinglePlayerCard from './components/SinglePlayerCard/SinglePlayerCard'
-import SearchBar from './components/SearchBar/SearchBar'
+import NavBar from './components/NavBar'
+import Home from './components/Home'
+import SinglePlayerCard from './components/SinglePlayerCard'
+import SearchBar from './components/SearchBar'
 import './App.css'
 
 function App() {
